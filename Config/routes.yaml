@@ -1,0 +1,44 @@
+base_path: /
+routes:
+  # System Routes
+  install: [/install,\App\Controllers\homeController.install,GET]
+  index: [/,\App\Controllers\homeController.index,GET]
+  settings: [/settings,\App\Controllers\homeController.settings,GET]
+  settings_set: [/settings/set,\\App\Controllers\homeController.set,POST]
+  #Employee
+  employee_login: [/employees/login,\App\Controllers\employeesController.login,GET]
+  employee_edit: [/employees/edit/:id,\App\Controllers\employeesController.edit,GET]
+  employee_update: [/employees/update/:id,\App\Controllers\employeesController.update,POST]
+  employee_resume: [/employees/resume/:id,\App\Controllers\employeesController.resume,GET]
+  employee_couldlog: [/employees/could_log,\App\Controllers\employeesController.could_log,GET]
+  request_validation: [/request_validation/:id,\App\Controllers\employeesController.request_validation,GET]
+  process_validation: [/process_validation,\App\Controllers\employeesController.process_validation,POST]
+  check_registration: [/check_registration/:id,\App\Controllers\employeesController.check_registration,POST]
+  process_registration: [/process_registration,\App\Controllers\employeesController.process_registration,POST]
+  feriados: [/feriados,\\App\Controllers\feriadosController.create,GET]
+  #User
+  user_login: [/users/login,\App\Controllers\usersController.login,GET]
+  user_authenticate: [/users/authenticate,\App\Controllers\usersController.authenticate,POST]
+  user_deauthenticate: [/users/deauthenticate,\App\Controllers\usersController.deauthenticate,GET]
+  user_dashboard: [/users/dashboard,\App\Controllers\usersController.dashboard,GET]
+  user_nomina: [/users/nomina,\App\Controllers\usersController.nomina,GET]
+  # Api Calls
+  api_details: [/api/details/:id,\App\Controllers\Api.details,GET]
+  api_invoice: [/api/invoice/:id,\App\Controllers\Api.invoice,GET]
+  api_test: [/api/test,\App\Controllers\Api.test,GET]
+  api_invoice_pdf: [/api/invoice/pdf/:id,\\App\Controllers\Api.invoicePDF,GET]
+  api_events: [/api/events/:id,\\App\Controllers\Api.events,GET]
+  # Feriados
+  feriados_json: [/feriados/json,\App\Controllers\feriadosController.json,GET]
+  feriados_add: [/feriados/add,\App\Controllers\feriadosController.add,POST]
+  #Devices
+  devices_list: [/devices,\App\Controllers\devicesController.index,GET]
+  devices_new: [/devices/new,\App\Controllers\devicesController.new,GET]
+  devices_show: [/devices/:id,\App\Controllers\devicesController.show,GET]
+  devices_create: [/devices,\App\Controllers\devicesController.create,POST]
+  
+  devices_update: [/devices/:id/update,\App\Controllers\devicesController.update,POST]
+  devices_edit: [/devices/:id/edit,\App\Controllers\devicesController.edit,GET]
+  devices_delete: [/devices/:id/delete,\App\Controllers\devicesController.delete,GET]
+  #TEST
+  test: [/test,\App\Controllers\homeController.test,GET]

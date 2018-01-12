@@ -1,0 +1,5 @@
+
+a.event-inverse:hover,a.event-inverse:active,a.event-inverse:visited,a.event-inverse:link{
+  color:red;
+  text-decoration: none;
+}

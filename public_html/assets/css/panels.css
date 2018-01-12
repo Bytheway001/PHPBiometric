@@ -1,0 +1,64 @@
+body{
+  background-color: black;
+}
+.panel-login{
+   background:#00020c;
+   border:#c6720b 1px double;
+   border-radius:0px;
+   padding:15px;
+   box-shadow: 3px 3px 5px black;
+
+}
+.panel-table.btn{
+  border-radius:0px;
+}
+.panel-table tr {
+  border-top: none ;
+  border-bottom: 1px double #c6720b ;
+}
+
+.panel-table tr th, .panel-table {
+  border-top: none !important;
+  background: transparent;
+}
+
+.panel-login .panel-heading{
+    text-transform: uppercase;
+    color:#c9aa71;
+
+}
+.panel-login .form-control{
+    border-radius:0px;
+    border:none;
+    background:none;
+    border-bottom:#c9aa71 2px solid;
+    color:#c9aa71;
+}
+
+.panel-login .form-control:focus{
+    box-shadow:none;
+}
+
+.nav-tabs li.active a,.nav-tabs li.active>a:hover{
+  border-radius:0px;
+  background-color: #a0680e!important;
+}
+
+.panel-login table.table-bordered{
+  background-color: transparent;
+}
+
+.panel-login table{
+  color:#c9aa71;
+}
+
+.panel-login a{
+  color:#c9aa71;
+}
+
+.thumbnail{
+  border-radius:0px;
+  background:black;
+   border:#c6720b 1px double;
+}
+/* TESTING */

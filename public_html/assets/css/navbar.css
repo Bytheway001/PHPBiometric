@@ -1,0 +1,47 @@
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:8px !important; 
+    padding-bottom:0 !important;
+    height: 40px;
+    color:#c9aa71!important;
+    font-size:1em!important;
+    text-transform: uppercase;
+    font-family: "Beaufort";
+
+}
+.navbar-text{
+  padding-top:8px !important; 
+  padding-bottom:0 !important;
+  margin-top:0px !important; 
+  margin-bottom:0 !important;
+  height: 40px;
+  text-transform: uppercase;
+
+}
+.navbar-brand{
+    padding-top:0px !important; 
+    margin-right:30px;
+
+}
+.navbar {
+    min-height:28px !important;
+    border-radius:0px;
+    background-color: var(--gray)
+
+}
+.navbar-default .navbar-nav>li>a{
+    
+}
+.dropdown-menu{
+    left:10px;
+    background-color: black!important;
+    border-radius:0px;
+    border:var(--gray) 1px solid;
+
+
+}
+.dropdown-menu li>a{
+   text-transform: uppercase;
+   color:#c9aa71;
+   background-color: black!important;
+
+}

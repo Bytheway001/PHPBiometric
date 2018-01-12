@@ -1,0 +1,55 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.6/css/fileinput.min.css');
+@import url('/assets/bscalendar/css/calendar.css');
+@import url('/assets/css/calendar-custom.css');
+@import url('/assets/css/panels.css');
+@import url('/assets/css/resume.css');
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/TableExport/4.0.11/css/tableexport.min.css');
+@import url('/assets/css/navbar.css');
+@import url('/assets/css/year-calendar.css');
+@font-face{
+    font-family: 'Beaufort';
+    src:url('/assets/fonts/Beaufort.woff');
+}
+
+:root{
+	--gold:#c9aa71;
+	--gray:#222222;
+	--blue-bg:#00020c;
+}
+
+.navbar{
+	margin-bottom:0px;
+}
+
+
+
+.alert-success,.alert-danger{
+	border-color:#00020c;
+	border-radius:0px;
+	text-align: center;
+}
+
+.btn-ok{
+	
+	background-color:#c6720b;
+	
+}
+.btn{
+	border-radius:0px;
+	color:white!important;
+}
+.btn-ok:hover{
+	background-color: #e2830d;
+}
+.btn-ok:active,.btn-back:active{
+	top:2px;
+	left:-2px;
+
+}
+

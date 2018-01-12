@@ -1,0 +1,11 @@
+.sidebar{
+	background-color: var(--blue-bg);
+	padding-top: 25px
+}
+.image{
+	text-align: center;
+	margin-bottom:25px;
+}
+.image img{
+	width: 30%;
+}

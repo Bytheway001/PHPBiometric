@@ -1,0 +1,80 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+:root{
+	--gold:#c9aa71;
+	--gray:#222222;
+	--blue-bg:#00020c;
+}
+@font-face{
+    font-family: 'Beaufort';
+    src:url('/assets/fonts/Beaufort.woff');
+}
+/* Main */
+body,html{
+	background-color: black;
+	height:100%;
+}
+
+
+/* Color Classes */
+
+.text-gold{
+	color:var(--gold);
+}
+.bg-gold{
+	background-color:var(--gold);
+}
+/* NAVBAR */
+
+nav.navbar{
+	font-family:'Beaufort';
+	background-color:var(--gray);
+	padding:0px;
+	padding-left:50px;
+	padding-right:50px;
+}
+nav.navbar *{
+	color:var(--gold)!important;
+}
+.nav-link{
+	border-bottom:transparent 2px solid
+}
+.navbar.nav-link:hover{
+	border-bottom:var(--gold) 2px solid;
+}
+.dropdown-menu{
+	margin-top: 0px;
+	border-radius:0px;
+	background-color: var(--gray);
+	border:var(--gray) 1px solid;
+}
+a.dropdown-item{
+	color:white;
+}
+
+/* vista de resume */
+
+
+.image{
+	text-align: center
+}
+.image img{
+	width:100px;
+	height:100px;
+	margin-bottom: 25px
+}
+
+.sidebar{
+	background-color:var(--blue-bg);
+	min-height: 100%;
+	padding-top:20px;
+	color:var(--gold);
+	text-transform: uppercase;
+	font-size:0.7em;
+}
+
+.sidebar-table th, .sidebar-table td{
+	padding:3px!important;
+}
