@@ -15,7 +15,7 @@ routes:
   process_validation: [/process_validation,\App\Controllers\employeesController.process_validation,POST]
   check_registration: [/check_registration/:id,\App\Controllers\employeesController.check_registration,POST]
   process_registration: [/process_registration,\App\Controllers\employeesController.process_registration,POST]
-  feriados: [/feriados,\\App\Controllers\feriadosController.create,GET]
+  feriados: [/feriados,\App\Controllers\feriadosController.create,GET]
   #User
   user_login: [/users/login,\App\Controllers\usersController.login,GET]
   user_authenticate: [/users/authenticate,\App\Controllers\usersController.authenticate,POST]

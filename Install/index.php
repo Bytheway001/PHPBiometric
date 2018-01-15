@@ -68,6 +68,13 @@ if(count($_POST)>0){
 					<div class="col-sm-4">
 						<h4>Configuración de la Empresa</h4>
 						<div class="form-group">
+							<label for="">Idioma</label>
+							<select class='form-control input-sm' name="company[locale]">
+								<option value="en">English</option>
+								<option value="es">Español</option>
+							</select>
+						</div>
+						<div class="form-group">
 							<label for="">Nombre de la empresa</label>
 							<input type="text" class='form-control input-sm' name="company[name]">
 						</div>

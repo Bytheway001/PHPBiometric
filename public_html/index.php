@@ -14,13 +14,12 @@ if ($_SERVER['REQUEST_URI']=='/install') {
     include('../install/index.php');
 } else {
     $config=json_decode(file_get_contents('../config/settings.json'));
-
     date_default_timezone_set($config->company->timezone);
     if (!session_id()) {
         @session_start();
     }
     define("LOCALE", $config->company->locale);
-    require('../app/locales/'.LOCALE.'.php');
+    require('../App/Locales/'.LOCALE.'.php');
     define('TEXT', $txt);
     define("PROJECTPATH", dirname(__DIR__));
     define("APPPATH", PROJECTPATH . '/App');

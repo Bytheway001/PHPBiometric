@@ -1,9 +1,9 @@
 <?php 
 namespace App\Controllers;
 use Core\View;
-use \Feriado as Feriado;
-use \Employee as Employee;
-use \Baja as Baja;
+use \App\Models\Feriado as Feriado;
+use \App\Models\Employee as Employee;
+use \App\Models\Baja as Baja;
 class feriadosController extends Controller{
 	public function create(){
 		View::set('title','Crear Feriado');
@@ -50,7 +50,7 @@ class feriadosController extends Controller{
 			}
 		}
 
-		foreach(\Baja::all() as $b){
+		foreach(Baja::all() as $b){
 			$json[]=[
 				'id'=>$b->id,
 				'name'=>$b->employee->nombres.', '.$b->motivo

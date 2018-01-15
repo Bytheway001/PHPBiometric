@@ -1,3 +1,4 @@
+<?php use \App\Models\Employee; ?>
 <script type="text/javascript" src='/assets/js/bootstrap-year-calendar.js'></script>
 <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-year-calendar/1.1.1/js/languages/bootstrap-year-calendar.es.js'></script>
 
@@ -163,7 +164,7 @@
 					<div class="form-group">
 						<label>Empleado</label>
 						<select class='form-control input-sm' id='employee_id' disabled>
-							<?php foreach(\Employee::all(['select'=>'id, nombres, apellidos']) as $e): ?>
+							<?php foreach(Employee::all(['select'=>'id, nombres, apellidos']) as $e): ?>
 								<option value="<?= $e->id ?>"><?= $e->nombres.' '.$e->apellidos ?></option>
 							<?php endforeach; ?>
 						</select>
